@@ -1,0 +1,22 @@
+var personajes = [
+    {
+       tipo: "Heroe",
+       vida: 1000,
+       infdmg: "ay!",
+       a: function (Villano) {
+           this.vida = this.vida - Villano.dmg
+           console.log(personajes[0].infdmg + ": " + "heroe sufriendo" )
+       }
+    },
+
+    {
+        tipo: "Villano",
+        dmg: 250,
+        voz: "muajajaja"
+        
+    },
+        
+]
+personajes[0].a(personajes[1])
+console.log(personajes[0].vida+": "+"Heroe recibe dmg")
+console.log(personajes[1].voz + ": " + "villano riendose")
